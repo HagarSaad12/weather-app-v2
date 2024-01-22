@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed w-100 top-0 end-0 start-0">
+    <div class="container">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="images/logo.png" class="w-25 pe-2">
+        <h1 class="fs-4 align-self-center text-white">Weather</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav1" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav1" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav1" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav1" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav1" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav1" href="#">News</a>
+          </li>
+           
+        </ul>
+         
+      </div>
+    </div>
+  </nav>
+   <section class="main overflow-auto">
+      <div class="container position-relative">
+        <input type="text" id="searchInput" class="form-control rounded-5 bg-transparent shadow-none p-2 text-white" placeholder="find your location">
+         
+      </div>
+      <div class="forecast-table">
+				<div class="container">
+					 <div class="row">
+             <div class="col-md-4">
+              <div class="p-4 item1">
+                <div class="forecast-container" id="forecast"><div class="today forecast">
+                  <div class="forecast-header text-white d-flex justify-content-between" id="today">
+                      <div class="day">Thursday</div>
+                       <div class="d-inline-block">
+                        <span class="date">18</span>
+                        <span class="month">june</span>
+                       </div>
+                  </div> <!-- .forecast-header -->
+                  
+                  <div class="forecast-content" id="current">
+                    <div class="location pt-3 text-white">New Delhi</div>
+                    <div class="degree d-flex justify-content-between align-items-center">
+                        <div class="num fw-bolder text-white fs-3">8<sup>o</sup>C</div>
+                      
+                        <div class="forecast-icon" id="todayImg">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/248.png" width="90" id="todayweatherImg">
+                        </div>	
+                    
+                    </div>
+                    <div class="custom mb-2 text-white">Fog</div>
+                    <img src="images/icon-umberella.png" alt="" class="pe-1">
+                    <span id="humdity" class="text-white"></span>
+                    <img src="images/icon-wind.png" alt="" class="pe-1">
+                    <span id="speed" class="text-white"> 18km/h</span>
+                    <img src="images/icon-compass.png" alt="" class="pe-1 text-black">
+                    <span id="wind" class="text-white">East</span>
+                  </div>
+              </div>
+             </div>
+           
+            </div>
+            </div>
+             <div class="col-md-4">
+              <div class="item1 p-4 mt-5 mt-md-0">
+                <div class="forecast-container" id="forecast"><div class="today forecast">
+                  <div class="forecast-header d-flex justify-content-center text-white" id="today">
+                      <div class="day1 text-white"></div>
+                       
+                  </div> <!-- .forecast-header -->
+                  <div class="forecast-content d-flex flex-column justify-content-center align-items-center" id="current">
+                    <div class="forecast-icon">
+                      <img src="https://cdn.weatherapi.com/weather/64x64/night/248.png" alt="" width="90" class="nextdayImg">
+                  </div>
+ 
+                   <div class="temp text-white">17.8</div>
+                   <div class="temp2 text-white">4.6</div>
+                   <p class="text text-white">bmhvkkk</p>
+                           
+                  </div>
+              </div>
+             </div>
+           
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item1 p-4 my-5 my-md-0">
+                <div class="forecast-container" id="forecast"><div class="today forecast">
+                  <div class="forecast-header d-flex justify-content-center" id="today">
+                      <div class="day1 text-white"></div>
+                       
+                  </div> <!-- .forecast-header -->
+                  <div class="forecast-content d-flex flex-column justify-content-center align-items-center" id="current">
+                    <div class="forecast-icon">
+                      <img src="https://cdn.weatherapi.com/weather/64x64/night/248.png" alt="" width="90" class="nextdayImg">
+                  </div>
+ 
+                   <div class="temp text-white">17.8</div>
+                   <div class="temp2 text-white">4.6</div>
+                   <p class="text text-white">bmhvkkk</p>
+                           
+                  </div>
+              </div>
+             </div>
+           
+            </div>
+            </div>
+            </div>
+        </div>
+      </div> 
+   </section>
+   <footer class="pt-5 pb-0">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="d-flex justify-content-between">
+            <div class="buttons w-50  position-relative">
+              <input type="email" name="" id="" class="form-control input2 rounded-5" placeholder="Enter your email">
+            </div>
+            <div class="links d-flex  justify-content-end">
+              <div class="link1 d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                 
+              </div>
+              <div class="link1 d-flex justify-content-center align-items-center">
+                <a href="https://www.twitter.com" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                 
+              </div>
+              <div class="link1 d-flex justify-content-center align-items-center">
+                <a href="https://www.google.com" target="_blank">
+                  <i class="fa-brands fa-google"></i>
+                </a>
+                 
+              </div>
+              <div class="link1 d-flex justify-content-center align-items-center">
+                <a href="https://www.pinterest.com" target="_blank">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="fs-6 text-white py-3">Copyright 2014 Company name. Designed by Hagar Saad. All rights reserved</p>
+     </div>
+   </footer> 
+ 
+   <script src="js/bootstrap.bundle.min.js"></script> 
+  <script src="js/main.js"></script>
+</body>
+</html>
